@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D0D1A"
+    android:padding="24dp">
+
+    <!-- Cabeçalho -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🤖 Marciano"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#00E5FF" />
+
+        <ImageButton
+            android:id="@+id/btnHistorico"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@android:drawable/ic_menu_recent_history"
+            android:background="@drawable/bg_btn_icon"
+            android:contentDescription="Histórico"
+            android:tint="#00E5FF" />
+    </LinearLayout>
+
+    <!-- Avatar / Status -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="🤖"
+            android:textSize="56sp"
+            android:background="@drawable/bg_avatar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Robô Ultrapassado v1.0"
+            android:textColor="#8888AA"
+            android:textSize="13sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="● Online"
+            android:textColor="#00E5A0"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Dica de comandos -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dica: tente some, subtraia, multiplique, divida ou agir"
+        android:textColor="#555577"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Campo de mensagem -->
+    <EditText
+        android:id="@+id/etMensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite sua mensagem..."
+        android:textColor="#FFFFFF"
+        android:textColorHint="#444466"
+        android:background="@drawable/bg_edittext"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:imeOptions="actionSend"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botão enviar -->
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="ENVIAR AO MARCIANO"
+        android:textColor="#0D0D1A"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:background="@drawable/bg_btn_primary"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Lista de histórico (oculta por padrão) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Histórico de mensagens"
+        android:textColor="#8888AA"
+        android:textSize="13sp"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHistorico"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+</LinearLayout>

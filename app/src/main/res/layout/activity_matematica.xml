@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D0D1A"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="🤖"
+        android:textSize="56sp"
+        android:background="@drawable/bg_avatar"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operação matemática"
+        android:textColor="#8888AA"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvTituloOp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Some (+)"
+        android:textColor="#00E5FF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/etNumA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Primeiro número"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#444466"
+        android:background="@drawable/bg_edittext"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etNumB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Segundo número"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#444466"
+        android:background="@drawable/bg_edittext"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="CALCULAR"
+        android:textColor="#0D0D1A"
+        android:textStyle="bold"
+        android:background="@drawable/bg_btn_primary"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnVoltarMat"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="VOLTAR"
+        android:textColor="#8888AA"
+        android:background="@android:color/transparent" />
+
+</LinearLayout>
